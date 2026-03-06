@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "hansenmyles";
+  default: true;
+
+  /* Primary – Deep Institutional Maroon (From the logo shield) */
+  --color-primary: oklch(32% 0.13 20); 
+  --color-primary-content: oklch(98% 0.01 80);
+
+  /* Secondary – Rich Academic Gold (From the stars) */
+  --color-secondary: oklch(75% 0.14 85);
+  --color-secondary-content: oklch(15% 0.05 20);
+
+  /* Accent – Softer Metallic Gold (For borders and highlights) */
+  --color-accent: oklch(88% 0.08 95);
+  --color-accent-content: oklch(25% 0.05 20);
+
+  /* Neutral – Dark Charcoal with a hint of Maroon */
+  --color-neutral: oklch(20% 0.04 20);
+  --color-neutral-content: oklch(98% 0.01 80);
+
+  /* Base – Clean Academic Cream (The background from your logo) */
+  --color-base-100: oklch(99% 0.01 85);   /* Purest cream for background */
+  --color-base-200: oklch(96% 0.015 85);  /* Slightly darker for sections */
+  --color-base-300: oklch(92% 0.02 85);   /* For borders/dividers */
+  --color-base-content: oklch(20% 0.02 20); /* Deep text color */
+
+  /* System Colors */
+  --color-info: oklch(65% 0.18 250);
+  --color-success: oklch(65% 0.18 150);
+  --color-warning: oklch(82% 0.16 85);
+  --color-error: oklch(55% 0.22 25);
+
+  /* Radius - Slightly sharper corners for a more formal feel */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Scrolls exactly half the width */
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite; /* Adjust '30s' to make it faster/solder */
+}
+
+.marquee-container {
+  display: flex;
+  width: max-content; /* Critical: tells the container to be as wide as the text */
+}
