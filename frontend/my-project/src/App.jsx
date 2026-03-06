@@ -1,7 +1,7 @@
 // src/App.jsx
 import React, { useEffect } from "react"; // Add 'React' here
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
@@ -14,7 +14,7 @@ import WhatsAppFloat from "./components/WhatsAppFloat";
 
 function App() {
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", "hansenmyles")
+    document.documentElement.setAttribute("data-theme", "hansenmyles");
   }, []);
 
   return (
@@ -27,14 +27,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path="/privacy" element={<Home />} /> 
+          <Route path="/privacy" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
           <Route path="/terms" element={<Home />} />
         </Routes>
       </div>
       <Footer />
-       <WhatsAppFloat />
+      <WhatsAppFloat />
     </Router>
   );
 }
