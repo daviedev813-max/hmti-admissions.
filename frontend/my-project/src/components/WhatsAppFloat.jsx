@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppFloat() {
   // FIXED: Added the full functional link
-  const whatsappUrl = "https://wa.me.";
+  const whatsappUrl = "https://wa.me/message/DYRT5INSCCRMF1";
 
   return (
     <div className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-[999] group select-none">
