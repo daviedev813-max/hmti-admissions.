@@ -21,7 +21,8 @@ if (!process.env.PORT) {
 // ---- App setup ----
 const app = express();
 app.use(cors({
-  origin: ["https://hansenmylestraininginstitute.vercel.app/", "http://localhost:5173"],
+  origin: "https://hansenmylestraininginstitute.vercel.app", // NO trailing slash!
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
 app.use(express.json());
@@ -29,6 +30,9 @@ app.use(express.json());
 
 // ---- Routes ----
 app.use("/api/applications", applicationRoutes);
+app.use((req, res) => {
+  res.status(404).send({ error: "Route not found. Check your VITE_API_URL." });
+});
 app.get("/", (req, res) => {
   res.send("Hansenmyles Training Institute API is running");
 });
