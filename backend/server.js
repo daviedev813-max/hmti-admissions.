@@ -20,8 +20,12 @@ if (!process.env.PORT) {
 
 // ---- App setup ----
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://hansenmylestraininginstitute.vercel.app/", "http://localhost:5173"],
+  credentials: true
+}));
 app.use(express.json());
+
 
 // ---- Routes ----
 app.use("/api/applications", applicationRoutes);

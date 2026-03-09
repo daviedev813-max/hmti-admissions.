@@ -52,3 +52,18 @@
   display: flex;
   width: max-content; /* Critical: tells the container to be as wide as the text */
 }
+/* Twinkling/Fade effect for Mobile */
+@keyframes twinkleFade {
+  0%, 100% { opacity: 0; transform: translateY(5px); }
+  20%, 80% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-twinkle {
+  animation: twinkleFade 4s infinite;
+}
+
+/* Keep your existing marquee for Desktop */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
