@@ -67,22 +67,22 @@ export default function Footer() {
           {/* SOCIAL MEDIA WITH ORIGINAL BRAND COLORS */}
           <div className="flex gap-4">
             <SocialIcon
-              url="https://whatsapp.com"
+              url="https://wa.me/message/DYRT5INSCCRMF1"
               style={{ height: 25, width: 25 }}
               target="_blank"
             />
             <SocialIcon
-              url="https://facebook.com"
+              url="https://www.facebook.com/profile.php?id=61586905881244"
               style={{ height: 25, width: 25 }}
               target="_blank"
             />
             <SocialIcon
-              url="https://instagram.com"
+              url="https://www.instagram.com/hansenmyles_training_institute?igsh=Z2E2N3pocXB1ajlz"
               style={{ height: 25, width: 25 }}
               target="_blank"
             />
             <SocialIcon
-              url="https://tiktok.com"
+              url="tiktok.com/@hansenmylesinstitu"
               style={{ height: 25, width: 25 }}
               target="_blank"
             />
