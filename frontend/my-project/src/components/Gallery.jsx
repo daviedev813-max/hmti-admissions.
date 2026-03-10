@@ -6,12 +6,12 @@ export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { url: "https://picsum.photos", title: "Clinical Nursing Lab" },
-    { url: "https://picsum.photos", title: "ICT & Computer Training" },
-    { url: "https://picsum.photos", title: "Student Resource Library" },
-    { url: "https://picsum.photos", title: "Practical Simulation Ward" },
-    { url: "https://picsum.photos", title: "2025 Graduation Ceremony" },
-    { url: "https://picsum.photos", title: "Campus Recreational Area" },
+    { url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg", title: "Clinical Nursing Lab" },
+    { url: "https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg", title: "ICT & Computer Training" },
+    { url: "https://images.pexels.com/photos/3184467/pexels-photo-3184467.jpeg", title: "Student Resource Library" },
+    { url: "https://images.pexels.com/photos/3184468/pexels-photo-3184468.jpeg", title: "Practical Simulation Ward" },
+    { url: "https://images.pexels.com/photos/3184469/pexels-photo-3184469.jpeg", title: "2025 Graduation Ceremony" },
+    { url: "https://images.pexels.com/photos/3184470/pexels-photo-3184470.jpeg", title: "Campus Recreational Area" },
   ];
 
   // Auto-play logic

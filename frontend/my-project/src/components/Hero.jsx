@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   // 1. FIXED: Added full Unsplash IDs for Healthcare, Lab, and Office training
-  const images = ["/hero1.png", "/hero2.png", "/hero3.png", "/hero4.png"];
+  const images = ["/hero1.png", "/hero2.png", "/hero3.png", "/hero4.png", "/hero5.png", "/hero6.png"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
