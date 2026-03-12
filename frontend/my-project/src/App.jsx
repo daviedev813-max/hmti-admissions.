@@ -1,6 +1,15 @@
 // src/App.jsx
 import React, { useEffect } from "react"; // Add 'React' here
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -19,6 +28,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <div className="min-h-screen">
         <Routes>
